@@ -4,9 +4,25 @@ metadata:
   name: terraformAKSACR
   annotations:
     github.com/project-slug: prayankag/terraformAKSACR
-    ci/cd: github-actions
-    github.com/ci-cd-pipeline-url: https://github.com/prayankag/terraformAKSACR/actions
+    backstage.io/techdocs-ref: dir:.
+    demo.backstage.io/techdocs-builder: local
 spec:
-  type: service
-  lifecycle: Testing
-  owner: prayankag
+  type: website
+  owner: backstage/maintainers
+  lifecycle: experimental
+  consumesApis:
+    - demo-graphql
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-graphql
+  description: GraphQL Backend Plugin
+spec:
+  type: graphql
+  lifecycle: production
+  owner: backstage/maintainers
+  apiConsumedBy:
+    - backstage-demo
+  definition:
+    $text: https://demo.backstage.io/api/graphql/schema
