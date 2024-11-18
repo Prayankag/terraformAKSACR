@@ -3,8 +3,8 @@ kind: Component
 metadata:
   name: terraformAKSACR
   annotations:
-    github.com/project-slug: Prayankag/terraformAKSACR
+    github.com/project-slug: prayankag/terraformAKSACR
    spec:
   type: service
-  lifecycle: unknown
+  lifecycle: Testing
   owner: prayankag
