@@ -4,6 +4,7 @@ metadata:
   name: terraformAKSACR
   annotations:
     github.com/project-slug: Prayankag/terraformAKSACR
+     github.com/project-url: https://github.com/Prayankag/terraformAKSACR
 spec:
   type: service
   lifecycle: unknown
