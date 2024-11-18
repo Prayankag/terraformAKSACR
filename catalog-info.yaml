@@ -4,7 +4,7 @@ metadata:
   name: terraformAKSACR
   annotations:
     github.com/project-slug: prayankag/terraformAKSACR
-   spec:
+spec:
   type: service
   lifecycle: Testing
   owner: prayankag
