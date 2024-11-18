@@ -4,6 +4,7 @@ metadata:
   name: terraformAKSACR
   annotations:
     github.com/project-slug: prayankag/terraformAKSACR
+    ci-cd.backstage.io/github-actions: https://github.com/prayankag/terraformAKSACR/actions
 spec:
   type: service
   lifecycle: Testing
